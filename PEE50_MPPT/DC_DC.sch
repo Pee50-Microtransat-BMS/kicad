@@ -1,0 +1,136 @@
+EESchema Schematic File Version 4
+LIBS:PEE50_MPPT-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Robin_lib:TPS552882QRPMRQ1 U?
+U 1 1 60887241
+P 5650 3350
+F 0 "U?" H 5650 5238 60  0000 C CNN
+F 1 "TPS552882QRPMRQ1" H 5650 5132 60  0000 C CNN
+F 2 "RPM0026A-MFG" H 5650 3290 60  0001 C CNN
+F 3 "" H 5650 3350 60  0000 C CNN
+	1    5650 3350
+	1    0    0    -1  
+$EndComp
+Text HLabel 2100 2600 0    50   Input ~ 0
+PVin+
+$Comp
+L Device:C C?
+U 1 1 6088749D
+P 2250 2800
+F 0 "C?" H 2365 2846 50  0000 L CNN
+F 1 "150u" H 2365 2755 50  0000 L CNN
+F 2 "" H 2288 2650 50  0001 C CNN
+F 3 "~" H 2250 2800 50  0001 C CNN
+	1    2250 2800
+	1    0    0    -1  
+$EndComp
+Text HLabel 2100 2950 0    50   Input ~ 0
+PVin-
+Wire Wire Line
+	2100 2950 2250 2950
+Wire Wire Line
+	2100 2600 2250 2600
+Wire Wire Line
+	2250 2600 2250 2650
+$Comp
+L Device:C C?
+U 1 1 608875B1
+P 3050 2800
+F 0 "C?" H 3165 2846 50  0000 L CNN
+F 1 "10u" H 3165 2755 50  0000 L CNN
+F 2 "" H 3088 2650 50  0001 C CNN
+F 3 "~" H 3050 2800 50  0001 C CNN
+	1    3050 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6088762E
+P 2650 2800
+F 0 "C?" H 2765 2846 50  0000 L CNN
+F 1 "150u" H 2765 2755 50  0000 L CNN
+F 2 "" H 2688 2650 50  0001 C CNN
+F 3 "~" H 2650 2800 50  0001 C CNN
+	1    2650 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 2650 2650 2650
+Connection ~ 2250 2650
+Connection ~ 2650 2650
+Wire Wire Line
+	3050 2950 2650 2950
+Connection ~ 2250 2950
+Connection ~ 2650 2950
+Wire Wire Line
+	2650 2950 2250 2950
+$Comp
+L Device:R R?
+U 1 1 608876D3
+P 3550 2800
+F 0 "R?" H 3620 2846 50  0000 L CNN
+F 1 "383k" H 3620 2755 50  0000 L CNN
+F 2 "" V 3480 2800 50  0001 C CNN
+F 3 "~" H 3550 2800 50  0001 C CNN
+	1    3550 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 608876FD
+P 3550 3150
+F 0 "R?" H 3620 3196 50  0000 L CNN
+F 1 "100k" H 3620 3105 50  0000 L CNN
+F 2 "" V 3480 3150 50  0001 C CNN
+F 3 "~" H 3550 3150 50  0001 C CNN
+	1    3550 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 3300 3050 3300
+Wire Wire Line
+	3050 3300 3050 2950
+Connection ~ 3050 2950
+Wire Wire Line
+	2650 2650 3050 2650
+Connection ~ 3050 2650
+Wire Wire Line
+	3050 2650 3550 2650
+Wire Wire Line
+	3550 2950 3550 3000
+Connection ~ 3550 2950
+Text HLabel 6900 3950 2    50   Input ~ 0
+FB
+Wire Wire Line
+	6900 3950 6550 3950
+Wire Wire Line
+	6550 2950 6550 3000
+Text HLabel 6600 3000 2    50   Output ~ 0
+Vout
+Wire Wire Line
+	6600 3000 6550 3000
+Connection ~ 6550 3000
+Wire Wire Line
+	6550 3000 6550 3050
+Wire Wire Line
+	3550 2950 4750 2950
+Wire Wire Line
+	3550 2650 4750 2650
+Connection ~ 3550 2650
+Wire Wire Line
+	4750 2950 4750 3050
+$EndSCHEMATC

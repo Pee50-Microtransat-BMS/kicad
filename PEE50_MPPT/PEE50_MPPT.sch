@@ -1,0 +1,127 @@
+EESchema Schematic File Version 4
+LIBS:PEE50_MPPT-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Conn_01x02_Female J?
+U 1 1 6085EA1A
+P 1250 2000
+F 0 "J?" H 1144 1675 50  0000 C CNN
+F 1 "PV_IN1" H 1144 1766 50  0000 C CNN
+F 2 "" H 1250 2000 50  0001 C CNN
+F 3 "~" H 1250 2000 50  0001 C CNN
+	1    1250 2000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1450 1900 1750 1900
+Wire Wire Line
+	1750 1900 1750 1750
+Wire Wire Line
+	1750 1750 1900 1750
+Wire Wire Line
+	1450 2000 1750 2000
+Wire Wire Line
+	1750 2000 1750 2150
+Wire Wire Line
+	3050 1900 3350 1900
+$Comp
+L Device:R R?
+U 1 1 6085EC5A
+P 3350 2100
+F 0 "R?" H 3420 2146 50  0000 L CNN
+F 1 "R" H 3420 2055 50  0000 L CNN
+F 2 "" V 3280 2100 50  0001 C CNN
+F 3 "~" H 3350 2100 50  0001 C CNN
+	1    3350 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 1950 3350 1900
+$Comp
+L Transistor_BJT:BC547 Q?
+U 1 1 6085ED32
+P 3250 2750
+F 0 "Q?" H 3441 2796 50  0000 L CNN
+F 1 "BC547" H 3441 2705 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 3450 2675 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 3250 2750 50  0001 L CNN
+	1    3250 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 2250 3350 2350
+Wire Wire Line
+	3050 2200 3200 2200
+Wire Wire Line
+	3200 2200 3200 2350
+Wire Wire Line
+	3200 2350 3350 2350
+Connection ~ 3350 2350
+Wire Wire Line
+	3350 2350 3350 2550
+$Comp
+L Device:R R?
+U 1 1 6085EE2A
+P 3350 3150
+F 0 "R?" H 3420 3196 50  0000 L CNN
+F 1 "R" H 3420 3105 50  0000 L CNN
+F 2 "" V 3280 3150 50  0001 C CNN
+F 3 "~" H 3350 3150 50  0001 C CNN
+	1    3350 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 2950 3350 3000
+$Comp
+L power:GND #PWR?
+U 1 1 6085EF47
+P 3350 3350
+F 0 "#PWR?" H 3350 3100 50  0001 C CNN
+F 1 "GND" H 3355 3177 50  0000 C CNN
+F 2 "" H 3350 3350 50  0001 C CNN
+F 3 "" H 3350 3350 50  0001 C CNN
+	1    3350 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 3300 3350 3350
+$Comp
+L power:GND #PWR?
+U 1 1 6085F011
+P 1750 2200
+F 0 "#PWR?" H 1750 1950 50  0001 C CNN
+F 1 "GND" H 1755 2027 50  0000 C CNN
+F 2 "" H 1750 2200 50  0001 C CNN
+F 3 "" H 1750 2200 50  0001 C CNN
+	1    1750 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 2200 1750 2150
+Connection ~ 1750 2150
+Wire Wire Line
+	1750 2150 1900 2150
+$Sheet
+S 1900 1500 1150 900 
+U 6085EB29
+F0 "DC/DC_Converter" 50
+F1 "DC_DC.sch" 50
+F2 "PVin+" I L 1900 1750 50 
+F3 "PVin-" I L 1900 2150 50 
+F4 "FB" I R 3050 2200 50 
+F5 "Vout" O R 3050 1900 50 
+$EndSheet
+$EndSCHEMATC
