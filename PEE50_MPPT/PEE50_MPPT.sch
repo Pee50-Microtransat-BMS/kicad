@@ -1101,6 +1101,7 @@ F15 "S10" I L 4300 5550 50
 F16 "S11" I L 4300 5450 50 
 F17 "S12" I L 4300 5350 50 
 F18 "out" O R 4800 6100 50 
+F19 "S13" I R 4800 5400 50 
 $EndSheet
 Wire Wire Line
 	5300 6850 4800 6850
@@ -1199,4 +1200,13 @@ Wire Wire Line
 	4200 5950 4300 5950
 Wire Wire Line
 	4200 5800 4300 5800
+Text GLabel 4250 3450 0    50   Input ~ 0
+Vout
+Wire Wire Line
+	4250 3450 4350 3450
+Connection ~ 4350 3450
+Text GLabel 4900 5400 2    50   Input ~ 0
+Vout
+Wire Wire Line
+	4900 5400 4800 5400
 $EndSCHEMATC

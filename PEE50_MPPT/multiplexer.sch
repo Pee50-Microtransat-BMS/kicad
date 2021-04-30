@@ -174,4 +174,8 @@ Text HLabel 7400 2650 2    50   Output ~ 0
 out
 Wire Wire Line
 	7400 2650 7300 2650
+Text HLabel 5050 3250 0    50   Input ~ 0
+S13
+Wire Wire Line
+	5050 3250 5100 3250
 $EndSCHEMATC
