@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 11
+Sheet 3 15
 Title ""
 Date ""
 Rev ""
@@ -106,10 +106,10 @@ Wire Wire Line
 Wire Wire Line
 	3800 2150 3900 2150
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0133
 U 1 1 608C4239
 P 8550 2400
-F 0 "#PWR?" H 8550 2150 50  0001 C CNN
+F 0 "#PWR0133" H 8550 2150 50  0001 C CNN
 F 1 "GND" H 8555 2227 50  0000 C CNN
 F 2 "" H 8550 2400 50  0001 C CNN
 F 3 "" H 8550 2400 50  0001 C CNN
@@ -128,4 +128,20 @@ Text HLabel 7650 2300 2    50   Input ~ 0
 ADC
 Wire Wire Line
 	7650 2300 7500 2300
+Text HLabel 7600 3250 2    50   Output ~ 0
+S0
+Text HLabel 7600 3350 2    50   Output ~ 0
+S1
+Text HLabel 7600 3450 2    50   Output ~ 0
+S2
+Text HLabel 7600 3550 2    50   Output ~ 0
+S3
+Wire Wire Line
+	7500 3550 7600 3550
+Wire Wire Line
+	7500 3450 7600 3450
+Wire Wire Line
+	7500 3350 7600 3350
+Wire Wire Line
+	7500 3250 7600 3250
 $EndSCHEMATC
