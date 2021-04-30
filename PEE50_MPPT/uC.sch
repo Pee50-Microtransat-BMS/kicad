@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 5
+Sheet 3 11
 Title ""
 Date ""
 Rev ""
@@ -82,4 +82,50 @@ Text HLabel 7700 4650 2    50   Output ~ 0
 DAC4
 Wire Wire Line
 	7700 4650 7500 4650
+$Comp
+L Connector:Conn_01x03_Female J?
+U 1 1 608C3F1C
+P 8800 2250
+F 0 "J?" H 8827 2276 50  0000 L CNN
+F 1 "Conn_01x03_Female" H 8827 2185 50  0000 L CNN
+F 2 "" H 8800 2250 50  0001 C CNN
+F 3 "~" H 8800 2250 50  0001 C CNN
+	1    8800 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 2150 8600 2150
+Wire Wire Line
+	8600 2250 7650 2250
+Wire Wire Line
+	7650 2250 7650 1950
+Wire Wire Line
+	7650 1950 3800 1950
+Wire Wire Line
+	3800 1950 3800 2150
+Wire Wire Line
+	3800 2150 3900 2150
+$Comp
+L power:GND #PWR?
+U 1 1 608C4239
+P 8550 2400
+F 0 "#PWR?" H 8550 2150 50  0001 C CNN
+F 1 "GND" H 8555 2227 50  0000 C CNN
+F 2 "" H 8550 2400 50  0001 C CNN
+F 3 "" H 8550 2400 50  0001 C CNN
+	1    8550 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8550 2400 8550 2350
+Wire Wire Line
+	8550 2350 8600 2350
+Text Notes 8300 2100 0    50   ~ 0
+TEST
+Text Notes 8300 2350 0    50   ~ 0
+RST\n
+Text HLabel 7650 2300 2    50   Input ~ 0
+ADC
+Wire Wire Line
+	7650 2300 7500 2300
 $EndSCHEMATC
