@@ -117,6 +117,9 @@ F2 "PVin+" I L 1450 1600 50
 F3 "PVin-" I L 1450 2000 50 
 F4 "FB" I R 2600 2050 50 
 F5 "Vout" O R 2600 1750 50 
+F6 "ISP" I R 2600 1950 50 
+F7 "ISN" I R 2600 1850 50 
+F8 "Pgnd" B R 2600 1500 50 
 $EndSheet
 $Sheet
 S 5300 6300 950  600 
@@ -215,17 +218,6 @@ F 1 "Conn_01x02_Female" H 4877 2935 50  0000 L CNN
 F 2 "" H 4850 3050 50  0001 C CNN
 F 3 "~" H 4850 3050 50  0001 C CNN
 	1    4850 3050
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0121
-U 1 1 608C22E4
-P 4600 3200
-F 0 "#PWR0121" H 4600 2950 50  0001 C CNN
-F 1 "GND" H 4605 3027 50  0000 C CNN
-F 2 "" H 4600 3200 50  0001 C CNN
-F 3 "" H 4600 3200 50  0001 C CNN
-	1    4600 3200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -424,6 +416,9 @@ F2 "PVin+" I L 1550 4650 50
 F3 "PVin-" I L 1550 5050 50 
 F4 "FB" I R 2700 5100 50 
 F5 "Vout" O R 2700 4800 50 
+F6 "ISP" I R 2700 4900 50 
+F7 "ISN" I R 2700 5000 50 
+F8 "Pgnd" B R 2700 4550 50 
 $EndSheet
 $Sheet
 S 950  3950 400  500 
@@ -655,6 +650,9 @@ F2 "PVin+" I R 8650 1600 50
 F3 "PVin-" I R 8650 2000 50 
 F4 "FB" I L 7500 2050 50 
 F5 "Vout" O L 7500 1750 50 
+F6 "ISP" I L 7500 1850 50 
+F7 "ISN" I L 7500 1950 50 
+F8 "Pgnd" B L 7500 1600 50 
 $EndSheet
 $Sheet
 S 8850 900  400  500 
@@ -888,6 +886,9 @@ F2 "PVin+" I R 8650 4650 50
 F3 "PVin-" I R 8650 5050 50 
 F4 "FB" I L 7500 5100 50 
 F5 "Vout" O L 7500 4800 50 
+F6 "ISP" I L 7500 4900 50 
+F7 "ISN" I L 7500 5000 50 
+F8 "Pgnd" B L 7500 4650 50 
 $EndSheet
 $Sheet
 S 8850 3950 400  500 
@@ -1209,4 +1210,54 @@ Text GLabel 4900 5400 2    50   Input ~ 0
 Vout
 Wire Wire Line
 	4900 5400 4800 5400
+Text GLabel 4600 3200 3    50   Input ~ 0
+Pgnd
+Wire Wire Line
+	2600 1850 3600 1850
+Wire Wire Line
+	3600 1850 3600 1750
+Wire Wire Line
+	2600 1950 3300 1950
+Wire Wire Line
+	3300 1950 3300 1750
+Wire Wire Line
+	2700 4900 3400 4900
+Wire Wire Line
+	3400 4900 3400 4800
+Wire Wire Line
+	2700 5000 3700 5000
+Wire Wire Line
+	3700 5000 3700 4800
+Text GLabel 2750 4550 2    50   Input ~ 0
+Pgnd
+Wire Wire Line
+	2750 4550 2700 4550
+Text GLabel 2650 1500 2    50   Input ~ 0
+Pgnd
+Wire Wire Line
+	2650 1500 2600 1500
+Wire Wire Line
+	7500 1850 6800 1850
+Wire Wire Line
+	6800 1850 6800 1750
+Wire Wire Line
+	7500 1950 6500 1950
+Wire Wire Line
+	6500 1950 6500 1750
+Text GLabel 7400 1600 0    50   Input ~ 0
+Pgnd
+Wire Wire Line
+	7400 1600 7500 1600
+Wire Wire Line
+	7500 4900 6800 4900
+Wire Wire Line
+	6800 4900 6800 4800
+Wire Wire Line
+	7500 5000 6500 5000
+Wire Wire Line
+	6500 5000 6500 4800
+Text GLabel 7450 4650 0    50   Input ~ 0
+Pgnd
+Wire Wire Line
+	7450 4650 7500 4650
 $EndSCHEMATC
