@@ -724,4 +724,10 @@ Wire Wire Line
 Connection ~ 3350 3300
 Wire Wire Line
 	3350 3300 3050 3300
+Wire Wire Line
+	6550 3350 6900 3350
+Wire Wire Line
+	6900 3350 6900 3400
+Connection ~ 6550 3350
+Connection ~ 6900 3400
 $EndSCHEMATC
