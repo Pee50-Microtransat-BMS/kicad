@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 2
+Sheet 1 5
 Title ""
 Date ""
 Rev ""
@@ -17,26 +17,20 @@ $EndDescr
 $Comp
 L Connector:Conn_01x02_Female J1
 U 1 1 6085EA1A
-P 1250 2000
-F 0 "J1" H 1144 1675 50  0000 C CNN
-F 1 "PV_IN1" H 1144 1766 50  0000 C CNN
-F 2 "" H 1250 2000 50  0001 C CNN
-F 3 "~" H 1250 2000 50  0001 C CNN
-	1    1250 2000
+P 1150 2000
+F 0 "J1" H 1044 1675 50  0000 C CNN
+F 1 "PV_IN1" H 1044 1766 50  0000 C CNN
+F 2 "" H 1150 2000 50  0001 C CNN
+F 3 "~" H 1150 2000 50  0001 C CNN
+	1    1150 2000
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	1450 1900 1750 1900
 Wire Wire Line
 	1750 1900 1750 1750
 Wire Wire Line
 	1750 1750 1900 1750
 Wire Wire Line
-	1450 2000 1750 2000
-Wire Wire Line
 	1750 2000 1750 2150
-Wire Wire Line
-	3050 1900 3350 1900
 $Comp
 L Device:R R1
 U 1 1 6085EC5A
@@ -124,4 +118,150 @@ F3 "PVin-" I L 1900 2150 50
 F4 "FB" I R 3050 2200 50 
 F5 "Vout" O R 3050 1900 50 
 $EndSheet
+$Sheet
+S 1950 2700 950  600 
+U 608BCBF7
+F0 "uC_MPPT" 50
+F1 "uC.sch" 50
+$EndSheet
+$Sheet
+S 1300 1050 400  500 
+U 608BDD43
+F0 "current_Sense" 50
+F1 "current_sense.sch" 50
+F2 "R+" I B 1400 1550 50 
+F3 "R-" I B 1600 1550 50 
+F4 "out" O T 1500 1050 50 
+$EndSheet
+$Comp
+L Device:R R8
+U 1 1 608BE8A7
+P 1600 1900
+F 0 "R8" V 1500 1850 50  0000 C CNN
+F 1 "R" V 1600 1900 50  0000 C CNN
+F 2 "" V 1530 1900 50  0001 C CNN
+F 3 "~" H 1600 1900 50  0001 C CNN
+	1    1600 1900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1350 1900 1400 1900
+Wire Wire Line
+	1350 2000 1750 2000
+Wire Wire Line
+	1400 1900 1400 1550
+Connection ~ 1400 1900
+Wire Wire Line
+	1400 1900 1450 1900
+Wire Wire Line
+	1750 1750 1600 1750
+Wire Wire Line
+	1600 1750 1600 1550
+Connection ~ 1750 1750
+$Sheet
+S 3700 1150 400  500 
+U 608BF482
+F0 "current_sense2" 50
+F1 "current_sense.sch" 50
+F2 "R+" I B 3800 1650 50 
+F3 "R-" I B 4000 1650 50 
+F4 "out" O T 3900 1150 50 
+$EndSheet
+$Comp
+L Device:R R9
+U 1 1 608BF638
+P 3900 1900
+F 0 "R9" V 3800 1850 50  0000 C CNN
+F 1 "R" V 3900 1900 50  0000 C CNN
+F 2 "" V 3830 1900 50  0001 C CNN
+F 3 "~" H 3900 1900 50  0001 C CNN
+	1    3900 1900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3750 1900 3750 1700
+Wire Wire Line
+	3750 1700 3800 1700
+Wire Wire Line
+	3800 1700 3800 1650
+Wire Wire Line
+	4050 1900 4050 1700
+Wire Wire Line
+	4050 1700 4000 1700
+Wire Wire Line
+	4000 1700 4000 1650
+Wire Wire Line
+	3050 1900 3350 1900
+Connection ~ 3750 1900
+Connection ~ 3350 1900
+Wire Wire Line
+	3350 1900 3750 1900
+Connection ~ 4050 1900
+$Comp
+L Connector:Conn_01x02_Female J?
+U 1 1 608C1F5B
+P 5050 1900
+F 0 "J?" H 5077 1876 50  0000 L CNN
+F 1 "Conn_01x02_Female" H 5077 1785 50  0000 L CNN
+F 2 "" H 5050 1900 50  0001 C CNN
+F 3 "~" H 5050 1900 50  0001 C CNN
+	1    5050 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 1900 4850 1900
+$Comp
+L power:GND #PWR?
+U 1 1 608C22E4
+P 4800 2050
+F 0 "#PWR?" H 4800 1800 50  0001 C CNN
+F 1 "GND" H 4805 1877 50  0000 C CNN
+F 2 "" H 4800 2050 50  0001 C CNN
+F 3 "" H 4800 2050 50  0001 C CNN
+	1    4800 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 2050 4800 2000
+Wire Wire Line
+	4800 2000 4850 2000
+$Comp
+L Device:R R?
+U 1 1 608C27BC
+P 1400 2200
+F 0 "R?" H 1470 2246 50  0000 L CNN
+F 1 "R" H 1470 2155 50  0000 L CNN
+F 2 "" V 1330 2200 50  0001 C CNN
+F 3 "~" H 1400 2200 50  0001 C CNN
+	1    1400 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 608C27F8
+P 1400 2550
+F 0 "R?" H 1470 2596 50  0000 L CNN
+F 1 "R" H 1470 2505 50  0000 L CNN
+F 2 "" V 1330 2550 50  0001 C CNN
+F 3 "~" H 1400 2550 50  0001 C CNN
+	1    1400 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 608C2820
+P 1400 2750
+F 0 "#PWR?" H 1400 2500 50  0001 C CNN
+F 1 "GND" H 1405 2577 50  0000 C CNN
+F 2 "" H 1400 2750 50  0001 C CNN
+F 3 "" H 1400 2750 50  0001 C CNN
+	1    1400 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 2750 1400 2700
+Wire Wire Line
+	1400 2400 1400 2350
+Wire Wire Line
+	1400 2050 1400 1900
 $EndSCHEMATC

@@ -1,0 +1,85 @@
+EESchema Schematic File Version 4
+LIBS:PEE50_MPPT-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Robin_lib:MSP430FR2353TDBT U4
+U 1 1 608BCC4E
+P 5700 3600
+F 0 "U4" H 2650 4650 60  0000 C CNN
+F 1 "MSP430FR2353TDBT" H 3050 4750 60  0000 C CNN
+F 2 "DBT38_TEX" H 4950 5250 60  0001 C CNN
+F 3 "" H 1600 4400 60  0000 C CNN
+	1    5700 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0111
+U 1 1 608BCC99
+P 5700 5500
+F 0 "#PWR0111" H 5700 5250 50  0001 C CNN
+F 1 "GND" H 5705 5327 50  0000 C CNN
+F 2 "" H 5700 5500 50  0001 C CNN
+F 3 "" H 5700 5500 50  0001 C CNN
+	1    5700 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 5500 5700 5400
+$Comp
+L Device:C C12
+U 1 1 608BF0BE
+P 5450 1650
+F 0 "C12" V 5198 1650 50  0000 C CNN
+F 1 "C" V 5289 1650 50  0000 C CNN
+F 2 "" H 5488 1500 50  0001 C CNN
+F 3 "~" H 5450 1650 50  0001 C CNN
+	1    5450 1650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5600 1650 5700 1650
+Wire Wire Line
+	5700 1650 5700 1800
+$Comp
+L power:GND #PWR0112
+U 1 1 608BF145
+P 5250 1650
+F 0 "#PWR0112" H 5250 1400 50  0001 C CNN
+F 1 "GND" V 5255 1522 50  0000 R CNN
+F 2 "" H 5250 1650 50  0001 C CNN
+F 3 "" H 5250 1650 50  0001 C CNN
+	1    5250 1650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5250 1650 5300 1650
+Text HLabel 7650 2400 2    50   Output ~ 0
+DAC1
+Wire Wire Line
+	7650 2400 7500 2400
+Text HLabel 7650 2800 2    50   Output ~ 0
+DAC2
+Wire Wire Line
+	7650 2800 7500 2800
+Text HLabel 7700 4250 2    50   Output ~ 0
+DAC3
+Wire Wire Line
+	7700 4250 7500 4250
+Text HLabel 7700 4650 2    50   Output ~ 0
+DAC4
+Wire Wire Line
+	7700 4650 7500 4650
+$EndSCHEMATC
