@@ -1116,4 +1116,87 @@ Wire Wire Line
 	4900 6400 4900 6100
 Wire Wire Line
 	4900 6100 4800 6100
+Wire Wire Line
+	800  2250 950  2250
+Connection ~ 950  2250
+Text GLabel 4200 6850 0    50   Input ~ 0
+Vpv1
+Wire Wire Line
+	4250 5350 4300 5350
+Text GLabel 1050 800  1    50   Input ~ 0
+Ipv1
+Wire Wire Line
+	1050 800  1050 900 
+Text GLabel 1150 3900 1    50   Input ~ 0
+Ipv2
+Text GLabel 9050 3850 1    50   Input ~ 0
+Ipv3
+Text GLabel 9050 800  1    50   Input ~ 0
+Ipv4
+Wire Wire Line
+	1150 3900 1150 3950
+Wire Wire Line
+	9050 3850 9050 3950
+Wire Wire Line
+	9050 900  9050 800 
+Text GLabel 4200 6400 0    50   Input ~ 0
+Ipv2
+Text GLabel 4200 6700 0    50   Input ~ 0
+Ipv1
+Wire Wire Line
+	4250 5450 4300 5450
+Text GLabel 4200 6550 0    50   Input ~ 0
+Vpv2
+Wire Wire Line
+	4250 5550 4300 5550
+Wire Wire Line
+	4250 5650 4300 5650
+Text GLabel 4200 6100 0    50   Input ~ 0
+Ipv3
+Text GLabel 4200 6250 0    50   Input ~ 0
+Vpv3
+Text GLabel 4200 5950 0    50   Input ~ 0
+Vpv4
+Text GLabel 4200 5800 0    50   Input ~ 0
+Ipv4
+Text GLabel 3450 900  1    50   Input ~ 0
+Imppt1
+Wire Wire Line
+	3450 900  3450 1000
+Text GLabel 3550 3950 1    50   Input ~ 0
+Imppt2
+Text GLabel 6650 4000 1    50   Input ~ 0
+Imppt3
+Text GLabel 6650 900  1    50   Input ~ 0
+Imppt4
+Wire Wire Line
+	6650 900  6650 1000
+Wire Wire Line
+	6650 4000 6650 4050
+Wire Wire Line
+	3550 3950 3550 4050
+Text GLabel 4250 5650 0    50   Input ~ 0
+Imppt1
+Text GLabel 4250 5450 0    50   Input ~ 0
+Imppt3
+Text GLabel 4250 5350 0    50   Input ~ 0
+Imppt4
+Text GLabel 4250 5550 0    50   Input ~ 0
+Imppt2
+Wire Wire Line
+	4200 6850 4300 6850
+Wire Wire Line
+	4200 6700 4300 6700
+Wire Wire Line
+	4200 6550 4300 6550
+Wire Wire Line
+	4200 6400 4300 6400
+Wire Wire Line
+	4200 6250 4300 6250
+Wire Wire Line
+	4200 6100 4300 6100
+Wire Wire Line
+	4200 5950 4300 5950
+Wire Wire Line
+	4200 5800 4300 5800
 $EndSCHEMATC
