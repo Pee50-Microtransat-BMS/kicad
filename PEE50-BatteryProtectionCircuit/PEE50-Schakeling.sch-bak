@@ -524,15 +524,9 @@ Connection ~ 1700 2650
 Wire Wire Line
 	1700 2650 1400 2650
 Wire Wire Line
-	600  2750 600  4150
-Wire Wire Line
 	600  2750 2650 2750
 Wire Wire Line
-	650  2850 650  4150
-Wire Wire Line
 	650  2850 1350 2850
-Wire Wire Line
-	700  2950 700  4150
 Wire Wire Line
 	700  2950 1000 2950
 Wire Notes Line
@@ -741,4 +735,46 @@ F 3 "" H 2600 7350 60  0000 C CNN
 	1    6700 6550
 	1    0    0    -1  
 $EndComp
+$Comp
+L TPS7A2433DBVR:TPS7A2433DBVR IC?
+U 1 1 6093B9DB
+P 9850 5100
+F 0 "IC?" H 10350 5365 50  0000 C CNN
+F 1 "TPS7A2433DBVR" H 10350 5274 50  0000 C CNN
+F 2 "SOT95P280X145-5N" H 10700 5200 50  0001 L CNN
+F 3 "https://www.ti.com/lit/gpn/TPS7A24" H 10700 5100 50  0001 L CNN
+F 4 "LDO Voltage Regulators 18-V-tolerant, 2- A IQ, 200-mA low-dropout (LDO) linear voltage regulator 5-SOT-23 -40 to 125" H 10700 5000 50  0001 L CNN "Description"
+F 5 "1.45" H 10700 4900 50  0001 L CNN "Height"
+F 6 "Texas Instruments" H 10700 4800 50  0001 L CNN "Manufacturer_Name"
+F 7 "TPS7A2433DBVR" H 10700 4700 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "595-TPS7A2433DBVR" H 10700 4600 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/TPS7A2433DBVR/?qs=wnTfsH77Xs7ROpwa%2Fm0jWA%3D%3D" H 10700 4500 50  0001 L CNN "Mouser Price/Stock"
+F 10 "TPS7A2433DBVR" H 10700 4400 50  0001 L CNN "Arrow Part Number"
+F 11 "https://www.arrow.com/en/products/tps7a2433dbvr/texas-instruments" H 10700 4300 50  0001 L CNN "Arrow Price/Stock"
+	1    9850 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 6800 700  6800
+Wire Wire Line
+	700  2950 700  6800
+Wire Wire Line
+	4900 6900 650  6900
+Wire Wire Line
+	650  2850 650  6900
+$Comp
+L power:GND #PWR?
+U 1 1 60946A93
+P 6700 8350
+F 0 "#PWR?" H 6700 8100 50  0001 C CNN
+F 1 "GND" H 6705 8177 50  0000 C CNN
+F 2 "" H 6700 8350 50  0001 C CNN
+F 3 "" H 6700 8350 50  0001 C CNN
+	1    6700 8350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	600  6700 4900 6700
+Wire Wire Line
+	600  2750 600  6700
 $EndSCHEMATC
