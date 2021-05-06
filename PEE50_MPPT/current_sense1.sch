@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:PEE50_MPPT-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -71,7 +70,7 @@ AR Path="/608DD930/6099D7D2" Ref="C?"  Part="1"
 AR Path="/608DD944/6099D7D2" Ref="C?"  Part="1" 
 F 0 "C15" V 4098 3100 50  0000 C CNN
 F 1 "100n" V 4189 3100 50  0000 C CNN
-F 2 "" H 4388 2950 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 4388 2950 50  0001 C CNN
 F 3 "~" H 4350 3100 50  0001 C CNN
 	1    4350 3100
 	0    1    1    0   
