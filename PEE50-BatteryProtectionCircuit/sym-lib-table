@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name PEE50-Schakeling-rescue)(type Legacy)(uri ${KIPRJMOD}/PEE50-Schakeling-rescue.lib)(options "")(descr ""))
+)
