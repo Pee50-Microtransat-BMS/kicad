@@ -1,0 +1,390 @@
+EESchema Schematic File Version 4
+LIBS:PEE50_MPPT-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 19
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Conn_01x02_Female J5
+U 1 1 609C696C
+P 3950 3450
+AR Path="/609B465D/609C696C" Ref="J5"  Part="1" 
+AR Path="/609F26BD/609C696C" Ref="J6"  Part="1" 
+AR Path="/609F4759/609C696C" Ref="J7"  Part="1" 
+AR Path="/609F5798/609C696C" Ref="J8"  Part="1" 
+F 0 "J8" H 3844 3125 50  0000 C CNN
+F 1 "PV_IN1" H 3844 3216 50  0000 C CNN
+F 2 "Connector_Phoenix_MSTB:PhoenixContact_MSTBA_2,5_2-G-5,08_1x02_P5.08mm_Horizontal" H 3950 3450 50  0001 C CNN
+F 3 "~" H 3950 3450 50  0001 C CNN
+	1    3950 3450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4550 3350 4550 3200
+Wire Wire Line
+	4550 3200 4700 3200
+Wire Wire Line
+	4550 3450 4550 3600
+$Comp
+L Device:R R7
+U 1 1 609C6976
+P 6150 3550
+AR Path="/609B465D/609C6976" Ref="R7"  Part="1" 
+AR Path="/609F26BD/609C6976" Ref="R24"  Part="1" 
+AR Path="/609F4759/609C6976" Ref="R41"  Part="1" 
+AR Path="/609F5798/609C6976" Ref="R58"  Part="1" 
+F 0 "R58" H 6220 3596 50  0000 L CNN
+F 1 "10k" H 6220 3505 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 6080 3550 50  0001 C CNN
+F 3 "~" H 6150 3550 50  0001 C CNN
+	1    6150 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 3400 6150 3350
+$Comp
+L Transistor_BJT:BC547 Q1
+U 1 1 609C697E
+P 6050 4200
+AR Path="/609B465D/609C697E" Ref="Q1"  Part="1" 
+AR Path="/609F26BD/609C697E" Ref="Q2"  Part="1" 
+AR Path="/609F4759/609C697E" Ref="Q3"  Part="1" 
+AR Path="/609F5798/609C697E" Ref="Q4"  Part="1" 
+F 0 "Q4" H 6241 4246 50  0000 L CNN
+F 1 "BC547" H 6241 4155 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 6250 4125 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/BC/BC547.pdf" H 6050 4200 50  0001 L CNN
+	1    6050 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 3700 6150 3800
+Wire Wire Line
+	5850 3650 6000 3650
+Wire Wire Line
+	6000 3650 6000 3800
+Wire Wire Line
+	6000 3800 6150 3800
+Connection ~ 6150 3800
+Wire Wire Line
+	6150 3800 6150 3950
+$Comp
+L Device:R R8
+U 1 1 609C698B
+P 6150 4600
+AR Path="/609B465D/609C698B" Ref="R8"  Part="1" 
+AR Path="/609F26BD/609C698B" Ref="R25"  Part="1" 
+AR Path="/609F4759/609C698B" Ref="R42"  Part="1" 
+AR Path="/609F5798/609C698B" Ref="R59"  Part="1" 
+F 0 "R59" H 6220 4646 50  0000 L CNN
+F 1 "R" H 6220 4555 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 6080 4600 50  0001 C CNN
+F 3 "~" H 6150 4600 50  0001 C CNN
+	1    6150 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 4400 6150 4450
+$Comp
+L power:GND #PWR019
+U 1 1 609C6993
+P 6150 4800
+AR Path="/609B465D/609C6993" Ref="#PWR019"  Part="1" 
+AR Path="/609F26BD/609C6993" Ref="#PWR040"  Part="1" 
+AR Path="/609F4759/609C6993" Ref="#PWR061"  Part="1" 
+AR Path="/609F5798/609C6993" Ref="#PWR082"  Part="1" 
+F 0 "#PWR082" H 6150 4550 50  0001 C CNN
+F 1 "GND" H 6155 4627 50  0000 C CNN
+F 2 "" H 6150 4800 50  0001 C CNN
+F 3 "" H 6150 4800 50  0001 C CNN
+	1    6150 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 4750 6150 4800
+$Comp
+L power:GND #PWR018
+U 1 1 609C699A
+P 4550 3650
+AR Path="/609B465D/609C699A" Ref="#PWR018"  Part="1" 
+AR Path="/609F26BD/609C699A" Ref="#PWR039"  Part="1" 
+AR Path="/609F4759/609C699A" Ref="#PWR060"  Part="1" 
+AR Path="/609F5798/609C699A" Ref="#PWR081"  Part="1" 
+F 0 "#PWR081" H 4550 3400 50  0001 C CNN
+F 1 "GND" H 4555 3477 50  0000 C CNN
+F 2 "" H 4550 3650 50  0001 C CNN
+F 3 "" H 4550 3650 50  0001 C CNN
+	1    4550 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 3650 4550 3600
+Connection ~ 4550 3600
+Wire Wire Line
+	4550 3600 4700 3600
+$Sheet
+S 4700 2950 1150 900 
+U 609C69A6
+F0 "sheet609C6964" 50
+F1 "DC_DC.sch" 50
+F2 "PVin+" I L 4700 3200 50 
+F3 "PVin-" I L 4700 3600 50 
+F4 "FB" I R 5850 3650 50 
+F5 "Vout" O R 5850 3350 50 
+F6 "ISP" I R 5850 3550 50 
+F7 "ISN" I R 5850 3450 50 
+F8 "Pgnd" B R 5850 3100 50 
+$EndSheet
+$Sheet
+S 4100 2500 400  500 
+U 609C69AB
+F0 "sheet609C6965" 50
+F1 "current_sense.sch" 50
+F2 "R+" I B 4200 3000 50 
+F3 "R-" I B 4400 3000 50 
+F4 "out" O T 4300 2500 50 
+$EndSheet
+$Comp
+L Device:R R5
+U 1 1 609C69B1
+P 4400 3350
+AR Path="/609B465D/609C69B1" Ref="R5"  Part="1" 
+AR Path="/609F26BD/609C69B1" Ref="R22"  Part="1" 
+AR Path="/609F4759/609C69B1" Ref="R39"  Part="1" 
+AR Path="/609F5798/609C69B1" Ref="R56"  Part="1" 
+F 0 "R56" V 4300 3300 50  0000 C CNN
+F 1 "0.01" V 4400 3350 50  0000 C CNN
+F 2 "Resistor_SMD:R_2512_6332Metric_Pad1.52x3.35mm_HandSolder" V 4330 3350 50  0001 C CNN
+F 3 "~" H 4400 3350 50  0001 C CNN
+	1    4400 3350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4150 3350 4200 3350
+Wire Wire Line
+	4150 3450 4550 3450
+Wire Wire Line
+	4200 3350 4200 3000
+Connection ~ 4200 3350
+Wire Wire Line
+	4200 3350 4250 3350
+Wire Wire Line
+	4550 3200 4400 3200
+Wire Wire Line
+	4400 3200 4400 3000
+Connection ~ 4550 3200
+$Sheet
+S 6500 2600 400  500 
+U 609C69BF
+F0 "sheet609C6966" 50
+F1 "current_sense1.sch" 50
+F2 "R+" I B 6600 3100 50 
+F3 "R-" I B 6800 3100 50 
+F4 "out" O T 6700 2600 50 
+$EndSheet
+$Comp
+L Device:R R10
+U 1 1 609C69C5
+P 6700 3350
+AR Path="/609B465D/609C69C5" Ref="R10"  Part="1" 
+AR Path="/609F26BD/609C69C5" Ref="R27"  Part="1" 
+AR Path="/609F4759/609C69C5" Ref="R44"  Part="1" 
+AR Path="/609F5798/609C69C5" Ref="R61"  Part="1" 
+F 0 "R61" V 6600 3300 50  0000 C CNN
+F 1 "0.01" V 6700 3350 50  0000 C CNN
+F 2 "Resistor_SMD:R_2512_6332Metric_Pad1.52x3.35mm_HandSolder" V 6630 3350 50  0001 C CNN
+F 3 "~" H 6700 3350 50  0001 C CNN
+	1    6700 3350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6550 3350 6550 3150
+Wire Wire Line
+	6550 3150 6600 3150
+Wire Wire Line
+	6600 3150 6600 3100
+Wire Wire Line
+	6850 3350 6850 3150
+Wire Wire Line
+	6850 3150 6800 3150
+Wire Wire Line
+	6800 3150 6800 3100
+Wire Wire Line
+	5850 3350 6150 3350
+Connection ~ 6550 3350
+Connection ~ 6150 3350
+Wire Wire Line
+	6150 3350 6550 3350
+Connection ~ 6850 3350
+$Comp
+L Device:R R3
+U 1 1 609C69D7
+P 4200 3650
+AR Path="/609B465D/609C69D7" Ref="R3"  Part="1" 
+AR Path="/609F26BD/609C69D7" Ref="R20"  Part="1" 
+AR Path="/609F4759/609C69D7" Ref="R37"  Part="1" 
+AR Path="/609F5798/609C69D7" Ref="R54"  Part="1" 
+F 0 "R54" H 4270 3696 50  0000 L CNN
+F 1 "180k" H 4270 3605 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4130 3650 50  0001 C CNN
+F 3 "~" H 4200 3650 50  0001 C CNN
+	1    4200 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 609C69DE
+P 4200 4000
+AR Path="/609B465D/609C69DE" Ref="R4"  Part="1" 
+AR Path="/609F26BD/609C69DE" Ref="R21"  Part="1" 
+AR Path="/609F4759/609C69DE" Ref="R38"  Part="1" 
+AR Path="/609F5798/609C69DE" Ref="R55"  Part="1" 
+F 0 "R55" H 4270 4046 50  0000 L CNN
+F 1 "20k" H 4270 3955 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4130 4000 50  0001 C CNN
+F 3 "~" H 4200 4000 50  0001 C CNN
+	1    4200 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR017
+U 1 1 609C69E5
+P 4200 4200
+AR Path="/609B465D/609C69E5" Ref="#PWR017"  Part="1" 
+AR Path="/609F26BD/609C69E5" Ref="#PWR038"  Part="1" 
+AR Path="/609F4759/609C69E5" Ref="#PWR059"  Part="1" 
+AR Path="/609F5798/609C69E5" Ref="#PWR080"  Part="1" 
+F 0 "#PWR080" H 4200 3950 50  0001 C CNN
+F 1 "GND" H 4205 4027 50  0000 C CNN
+F 2 "" H 4200 4200 50  0001 C CNN
+F 3 "" H 4200 4200 50  0001 C CNN
+	1    4200 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 4200 4200 4150
+Wire Wire Line
+	4200 3850 4200 3800
+Wire Wire Line
+	4200 3500 4200 3350
+$Comp
+L Device:R R6
+U 1 1 609C69EE
+P 5650 4200
+AR Path="/609B465D/609C69EE" Ref="R6"  Part="1" 
+AR Path="/609F26BD/609C69EE" Ref="R23"  Part="1" 
+AR Path="/609F4759/609C69EE" Ref="R40"  Part="1" 
+AR Path="/609F5798/609C69EE" Ref="R57"  Part="1" 
+F 0 "R57" H 5720 4246 50  0000 L CNN
+F 1 "R" H 5720 4155 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 5580 4200 50  0001 C CNN
+F 3 "~" H 5650 4200 50  0001 C CNN
+	1    5650 4200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5800 4200 5850 4200
+Text GLabel 5200 4200 0    50   Input ~ 0
+DAC1
+Wire Wire Line
+	5200 4200 5500 4200
+Text GLabel 4050 3850 0    50   Input ~ 0
+Vpv1
+Wire Wire Line
+	6850 3350 7350 3350
+Wire Wire Line
+	4050 3850 4200 3850
+Connection ~ 4200 3850
+Text GLabel 4300 2400 1    50   Input ~ 0
+Ipv1
+Wire Wire Line
+	4300 2400 4300 2500
+Text GLabel 6700 2500 1    50   Input ~ 0
+Imppt1
+Wire Wire Line
+	6700 2500 6700 2600
+Wire Wire Line
+	5850 3450 6850 3450
+Wire Wire Line
+	6850 3450 6850 3350
+Wire Wire Line
+	5850 3550 6550 3550
+Wire Wire Line
+	6550 3550 6550 3350
+Text GLabel 5900 3100 2    50   Input ~ 0
+Pgnd
+Wire Wire Line
+	5900 3100 5850 3100
+$Comp
+L Robin_lib:NTA4151PT1G U4
+U 1 1 609C6A06
+P 7450 4300
+AR Path="/609B465D/609C6A06" Ref="U4"  Part="1" 
+AR Path="/609F26BD/609C6A06" Ref="U10"  Part="1" 
+AR Path="/609F4759/609C6A06" Ref="U16"  Part="1" 
+AR Path="/609F5798/609C6A06" Ref="U22"  Part="1" 
+F 0 "U22" H 8355 4197 60  0000 L CNN
+F 1 "NTA4151PT1G" H 7600 4050 60  0000 L CNN
+F 2 "AudioProject:NTA4151PT1G" H 8250 4540 60  0001 C CNN
+F 3 "" H 7450 4300 60  0000 C CNN
+	1    7450 4300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6650 4050 6650 3950
+Wire Wire Line
+	6650 3950 6150 3950
+Connection ~ 6150 3950
+Wire Wire Line
+	6150 3950 6150 4000
+$Comp
+L Device:R R9
+U 1 1 609C6A11
+P 6650 4650
+AR Path="/609B465D/609C6A11" Ref="R9"  Part="1" 
+AR Path="/609F26BD/609C6A11" Ref="R26"  Part="1" 
+AR Path="/609F4759/609C6A11" Ref="R43"  Part="1" 
+AR Path="/609F5798/609C6A11" Ref="R60"  Part="1" 
+F 0 "R60" H 6720 4696 50  0000 L CNN
+F 1 "R" H 6720 4605 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 6580 4650 50  0001 C CNN
+F 3 "~" H 6650 4650 50  0001 C CNN
+	1    6650 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR020
+U 1 1 609C6A18
+P 6650 4850
+AR Path="/609B465D/609C6A18" Ref="#PWR020"  Part="1" 
+AR Path="/609F26BD/609C6A18" Ref="#PWR041"  Part="1" 
+AR Path="/609F4759/609C6A18" Ref="#PWR062"  Part="1" 
+AR Path="/609F5798/609C6A18" Ref="#PWR083"  Part="1" 
+F 0 "#PWR083" H 6650 4600 50  0001 C CNN
+F 1 "GND" H 6655 4677 50  0000 C CNN
+F 2 "" H 6650 4850 50  0001 C CNN
+F 3 "" H 6650 4850 50  0001 C CNN
+	1    6650 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 4850 6650 4800
+Wire Wire Line
+	6650 4500 6650 4450
+Text GLabel 7050 4250 2    50   Input ~ 0
+DAC1
+Wire Wire Line
+	7050 4250 6950 4250
+Text HLabel 7350 3350 2    50   Input ~ 0
+Vout
+$EndSCHEMATC
