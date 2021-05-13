@@ -143,21 +143,48 @@ Wire Wire Line
 	7500 3350 7600 3350
 Wire Wire Line
 	7500 3250 7600 3250
-$Comp
-L Connector:Conn_01x02_Female J3
-U 1 1 6091D58E
-P 7800 2900
-F 0 "J3" H 7827 2876 50  0000 L CNN
-F 1 "Conn_01x02_Female" H 7827 2785 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 7800 2900 50  0001 C CNN
-F 3 "~" H 7800 2900 50  0001 C CNN
-	1    7800 2900
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7500 2900 7600 2900
 Wire Wire Line
 	7500 3000 7600 3000
 Text Notes 8000 3050 0    50   ~ 0
 uC RX\nuC TX\n
+$Comp
+L power:+3V3 #PWR0101
+U 1 1 609D348B
+P 5700 1550
+F 0 "#PWR0101" H 5700 1400 50  0001 C CNN
+F 1 "+3V3" H 5715 1723 50  0000 C CNN
+F 2 "" H 5700 1550 50  0001 C CNN
+F 3 "" H 5700 1550 50  0001 C CNN
+	1    5700 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 1550 5700 1650
+Connection ~ 5700 1650
+$Comp
+L Connector:Conn_01x03_Female J3
+U 1 1 609DA506
+P 7800 3000
+F 0 "J3" H 7828 3026 50  0000 L CNN
+F 1 "Conn_01x03_Female" H 7828 2935 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 7800 3000 50  0001 C CNN
+F 3 "~" H 7800 3000 50  0001 C CNN
+	1    7800 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 609DACF1
+P 7500 3100
+F 0 "#PWR0102" H 7500 2850 50  0001 C CNN
+F 1 "GND" H 7505 2927 50  0000 C CNN
+F 2 "" H 7500 3100 50  0001 C CNN
+F 3 "" H 7500 3100 50  0001 C CNN
+	1    7500 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 3100 7600 3100
 $EndSCHEMATC

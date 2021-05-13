@@ -406,6 +406,10 @@ U 609B465D
 F0 "Sheet609B465C" 50
 F1 "MPPT.sch" 50
 F2 "Vout" I R 3050 1750 50 
+F3 "Imppt" I R 3050 1900 50 
+F4 "Ipv" I R 3050 2000 50 
+F5 "DAC" I L 2150 1950 50 
+F6 "Vpv" I L 2150 1850 50 
 $EndSheet
 $Sheet
 S 2150 3450 900  700 
@@ -413,6 +417,10 @@ U 609F26BD
 F0 "sheet609F26BA" 50
 F1 "MPPT.sch" 50
 F2 "Vout" I R 3050 3800 50 
+F3 "Imppt" I R 3050 3950 50 
+F4 "Ipv" I R 3050 4050 50 
+F5 "DAC" I L 2150 4000 50 
+F6 "Vpv" I L 2150 3900 50 
 $EndSheet
 $Sheet
 S 2150 2400 900  700 
@@ -420,6 +428,10 @@ U 609F4759
 F0 "sheet609F4756" 50
 F1 "MPPT.sch" 50
 F2 "Vout" I R 3050 2750 50 
+F3 "Imppt" I R 3050 2900 50 
+F4 "Ipv" I R 3050 3000 50 
+F5 "DAC" I L 2150 2950 50 
+F6 "Vpv" I L 2150 2850 50 
 $EndSheet
 $Sheet
 S 2200 4450 900  700 
@@ -427,6 +439,10 @@ U 609F5798
 F0 "sheet609F5795" 50
 F1 "MPPT.sch" 50
 F2 "Vout" I R 3100 4800 50 
+F3 "Imppt" I R 3100 4900 50 
+F4 "Ipv" I R 3100 5000 50 
+F5 "DAC" I L 2200 5000 50 
+F6 "Vpv" I L 2200 4850 50 
 $EndSheet
 Wire Wire Line
 	3050 1750 3400 1750
@@ -450,4 +466,68 @@ Connection ~ 4350 3050
 Connection ~ 3400 3050
 Wire Wire Line
 	3400 3050 3400 3800
+Text GLabel 3150 1900 2    50   Input ~ 0
+Imppt1
+Text GLabel 3150 2000 2    50   Input ~ 0
+Ipv1
+Wire Wire Line
+	3050 1900 3150 1900
+Wire Wire Line
+	3050 2000 3150 2000
+Text GLabel 3150 2900 2    50   Input ~ 0
+Imppt2
+Text GLabel 3200 3950 2    50   Input ~ 0
+Imppt3
+Text GLabel 3200 4900 2    50   Input ~ 0
+Imppt4
+Text GLabel 3150 3000 2    50   Input ~ 0
+Ipv2
+Text GLabel 3200 4050 2    50   Input ~ 0
+Ipv3
+Text GLabel 3200 5000 2    50   Input ~ 0
+Ipv4
+Wire Wire Line
+	3150 2900 3050 2900
+Wire Wire Line
+	3050 3000 3150 3000
+Wire Wire Line
+	3200 3950 3050 3950
+Wire Wire Line
+	3050 4050 3200 4050
+Wire Wire Line
+	3200 4900 3100 4900
+Wire Wire Line
+	3100 5000 3200 5000
+Text GLabel 2100 1850 0    50   Input ~ 0
+Vpv1
+Text GLabel 2050 4850 0    50   Input ~ 0
+Vpv4
+Text GLabel 2000 3900 0    50   Input ~ 0
+Vpv3
+Text GLabel 2050 2850 0    50   Input ~ 0
+Vpv2
+Text GLabel 2100 1950 0    50   Input ~ 0
+DAC1
+Text GLabel 2050 2950 0    50   Input ~ 0
+DAC2
+Text GLabel 2000 4000 0    50   Input ~ 0
+DAC3
+Text GLabel 2050 5000 0    50   Input ~ 0
+DAC4
+Wire Wire Line
+	2050 5000 2200 5000
+Wire Wire Line
+	2050 4850 2200 4850
+Wire Wire Line
+	2000 4000 2150 4000
+Wire Wire Line
+	2000 3900 2150 3900
+Wire Wire Line
+	2050 2950 2150 2950
+Wire Wire Line
+	2050 2850 2150 2850
+Wire Wire Line
+	2100 1950 2150 1950
+Wire Wire Line
+	2100 1850 2150 1850
 $EndSCHEMATC

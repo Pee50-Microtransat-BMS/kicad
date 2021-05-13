@@ -293,23 +293,15 @@ F 3 "~" H 5650 4200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5800 4200 5850 4200
-Text GLabel 5200 4200 0    50   Input ~ 0
-DAC1
 Wire Wire Line
 	5200 4200 5500 4200
-Text GLabel 4050 3850 0    50   Input ~ 0
-Vpv1
 Wire Wire Line
 	6850 3350 7350 3350
 Wire Wire Line
 	4050 3850 4200 3850
 Connection ~ 4200 3850
-Text GLabel 4300 2400 1    50   Input ~ 0
-Ipv1
 Wire Wire Line
 	4300 2400 4300 2500
-Text GLabel 6700 2500 1    50   Input ~ 0
-Imppt1
 Wire Wire Line
 	6700 2500 6700 2600
 Wire Wire Line
@@ -380,10 +372,25 @@ Wire Wire Line
 	6650 4850 6650 4800
 Wire Wire Line
 	6650 4500 6650 4450
-Text GLabel 7050 4250 2    50   Input ~ 0
-DAC1
 Wire Wire Line
-	7050 4250 6950 4250
+	7050 4250 7000 4250
 Text HLabel 7350 3350 2    50   Input ~ 0
 Vout
+Text HLabel 6700 2500 1    50   Input ~ 0
+Imppt
+Text HLabel 4300 2400 1    50   Input ~ 0
+Ipv
+Text HLabel 7050 4250 2    50   Input ~ 0
+DAC
+Wire Wire Line
+	7000 4250 7000 4600
+Wire Wire Line
+	7000 4600 5200 4600
+Wire Wire Line
+	5200 4600 5200 4200
+Connection ~ 7000 4250
+Wire Wire Line
+	7000 4250 6950 4250
+Text HLabel 4050 3850 0    50   Input ~ 0
+Vpv
 $EndSCHEMATC
