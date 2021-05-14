@@ -1,3 +1,7 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP TPS7A2433DBVR
+F https://www.ti.com/lit/ds/symlink/tps7a24.pdf
+$ENDCMP
+#
 #End Doc Library
