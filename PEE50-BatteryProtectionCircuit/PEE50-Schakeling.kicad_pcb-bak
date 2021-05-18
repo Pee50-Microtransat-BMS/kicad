@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 9)
+    (drawings 8)
     (tracks 508)
     (zones 0)
     (modules 57)
@@ -3130,8 +3130,6 @@
     )
   )
 
-  (gr_line (start 39.08044 35.52698) (end 39.11854 35.52698) (layer Edge.Cuts) (width 0.05) (tstamp 60A4D200))
-  (gr_line (start 39.08044 35.52952) (end 39.08044 35.52698) (layer Edge.Cuts) (width 0.05))
   (dimension 108.21924 (width 0.15) (layer Dwgs.User)
     (gr_text "108.219 mm" (at 93.2815 30.03344) (layer Dwgs.User)
       (effects (font (size 1 1) (thickness 0.15)))
@@ -3157,6 +3155,7 @@
     (arrow2b (pts (xy 153.99512 109.42574) (xy 153.408699 108.299236)))
   )
   (gr_line (start 39.08044 35.8013) (end 39.08044 35.52952) (layer Edge.Cuts) (width 0.05))
+  (gr_line (start 39.11092 35.52698) (end 39.08298 35.52698) (layer Edge.Cuts) (width 0.05))
   (gr_line (start 147.28952 35.52698) (end 39.11854 35.52698) (layer Edge.Cuts) (width 0.05))
   (gr_line (start 147.28952 109.21746) (end 147.28952 35.52698) (layer Edge.Cuts) (width 0.05))
   (gr_line (start 39.08044 109.21746) (end 147.28952 109.21746) (layer Edge.Cuts) (width 0.05))

@@ -1,4 +1,4 @@
-18990942557697994
+19000668016918498
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -2274,6 +2274,48 @@ speaker CUI
 0
 2
 2
+CAN_control
+BAT_BH1000G
+
+
+0
+2
+2
+CAN_control
+MAX17320G20&plus_
+
+
+0
+25
+25
+CAN_control
+MCP2515T-I&slash_ST
+
+
+0
+20
+20
+CAN_control
+MSP430FR2353TDBT
+
+
+0
+38
+38
+CAN_control
+SOIC127P600X175-8N
+
+
+0
+8
+8
+CAN_control
+SOT95P280X145-5N
+DBV
+Integrated Circuit
+0
+5
+5
 Calibration_Scale
 Gauge_10mm_Type1_CopperTop
 Gauge, Massstab, 10mm, CopperTop, Type 1,
