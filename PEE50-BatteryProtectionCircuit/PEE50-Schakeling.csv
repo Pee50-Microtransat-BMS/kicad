@@ -1,0 +1,32 @@
+Id;Designator;Package;Quantity;Designation;Supplier and ref
+1;REF**,REF**,REF**;MountingHole_2mm;3;MountingHole_2mm;
+2;C1,C3,C8,C9,C10,C11,C15,C18;C_0603_1608Metric;8;0.1uF;
+3;C2,C6,C7;C_0603_1608Metric;3;0.47uF;
+4;C4,C5,C12;C_0603_1608Metric;3;100nF;
+5;C13;C_0603_1608Metric;1;10uF;
+6;C14;C_0603_1608Metric;1;1nF;
+7;C16,C17;C_0603_1608Metric;2;30p;
+8;D1,D2,D3;D_0603_1608Metric_Castellated;3;4.7V Zener;
+9;IC1;SOT95P280X145-5N;1;TPS7A2433DBVR;
+10;J1,J2,J3,J4,J7,J8;PhoenixContact_MSTBA_2,5_2-G-5,08_1x02_P5.08mm_Horizontal;6;Conn_01x02_Male;
+11;J5;PinHeader_2x03_P2.54mm_Vertical;1;Conn_02x03_Odd_Even;
+12;JP1;PinHeader_1x03_P2.54mm_Vertical;1;Jumper_NC_Dual;
+13;Q1,Q2;VSONP-8-1EP_5x6_P1.27mm;2;Q_NMOS_DGS;
+14;R1,R2,R3;R_0603_1608Metric;3;150Ohm;
+15;R4;R_0603_1608Metric;1;10 Ohm;
+16;R5,R8;R_0603_1608Metric;2;100 Ohm;
+17;R6,R7;R_0603_1608Metric;2;1kOhm;
+18;R9;R_0603_1608Metric;1;10kOhm;
+19;R10;R_0603_1608Metric;1;5mOhm;
+20;R11;R_0603_1608Metric;1;47k;
+21;R12,R13,R14,R15;R_0603_1608Metric;4;50 Ohm;
+22;R16;R_0603_1608Metric;1;10k;
+23;U1;MAX17320G20&plus_;1;MAX17320G20+;
+24;U2;MSP430FR2353TDBT;1;MSP430FR2353TDBT;
+25;U3;MCP2515T-I&slash_ST;1;MCP2515T-I_ST;
+26;U5;SOIC127P600X175-8N;1;MAX3051ESA;
+27;Y1;Crystal_HC49-4H_Vertical;1;8MHz;
+28;D4,D5;D_0603_1608Metric;2;D_Schottky;
+29;R17;R_0603_1608Metric;1;120;
+30;BT1,BT2;BAT_BH1000G;2;BH1000G;https://nl.mouser.com/ProductDetail/Keystone-Electronics/1053?qs=%2F7TOpeL5Mz4zfgvqwo9sng%3D%3D
+31;J6;Molex_Mini-Fit_Jr_5566-04A2_2x02_P4.20mm_Vertical;1;Conn_01x02_Female;
