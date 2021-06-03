@@ -152,7 +152,7 @@ F 3 "" H 7650 1050 50  0001 C CNN
 $EndComp
 Text Label 8650 1350 2    50   ~ 0
 Vcurrent
-Text Notes 7750 1250 0    50   ~ 0
+Text Notes 7900 1050 0    50   ~ 0
 2.4 mV x 500 = 1.2 V\nCompare with MSP430\ninternal comparator \nwhich has 1.2 V reference \nin LPM
 Text Notes 6650 700  0    50   ~ 10
 Current Sense Amplifier
@@ -783,14 +783,14 @@ $EndComp
 $Comp
 L power:GNDPWR #PWR?
 U 1 1 60B17010
-P 9000 1750
+P 9550 1750
 AR Path="/60B17010" Ref="#PWR?"  Part="1" 
 AR Path="/60ADA612/60B17010" Ref="#PWR040"  Part="1" 
-F 0 "#PWR040" H 9000 1550 50  0001 C CNN
-F 1 "GNDPWR" H 9004 1596 50  0000 C CNN
-F 2 "" H 9000 1700 50  0001 C CNN
-F 3 "" H 9000 1700 50  0001 C CNN
-	1    9000 1750
+F 0 "#PWR040" H 9550 1550 50  0001 C CNN
+F 1 "GNDPWR" H 9554 1596 50  0000 C CNN
+F 2 "" H 9550 1700 50  0001 C CNN
+F 3 "" H 9550 1700 50  0001 C CNN
+	1    9550 1750
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -855,7 +855,7 @@ Text Notes 7900 4000 0    50   ~ 10
 CAN Interface Module
 Text Notes 2500 3450 0    50   ~ 10
 MSP430FS2353 Microcontroller
-Text Notes 9350 850  0    50   ~ 10
+Text Notes 9900 850  0    50   ~ 10
 Launchpad Programming Header
 Text Notes 3350 700  0    50   ~ 10
 12V -> 3V3 LDO
@@ -881,8 +881,6 @@ Text Label 5250 4850 2    50   ~ 0
 ~TX1RTS
 Text Label 5250 4750 2    50   ~ 0
 ~TX0RTS
-Wire Wire Line
-	4900 5050 5250 5050
 Text Label 5250 5050 2    50   ~ 0
 ~RST_CAN
 Wire Wire Line
@@ -1063,8 +1061,8 @@ U 1 1 60B17098
 P 5100 1250
 AR Path="/60B17098" Ref="C?"  Part="1" 
 AR Path="/60ADA612/60B17098" Ref="C4"  Part="1" 
-F 0 "C4" H 5192 1296 50  0000 L CNN
-F 1 "100nF" H 5192 1205 50  0000 L CNN
+F 0 "C4" H 5000 1300 50  0000 R CNN
+F 1 "100nF" H 5000 1200 50  0000 R CNN
 F 2 "Capacitor_SMD:C_1206_3216Metric" H 5100 1250 50  0001 C CNN
 F 3 "~" H 5100 1250 50  0001 C CNN
 	1    5100 1250
@@ -1073,36 +1071,36 @@ $EndComp
 $Comp
 L Device:C_Small C?
 U 1 1 60B1709E
-P 9000 1600
+P 9550 1600
 AR Path="/60B1709E" Ref="C?"  Part="1" 
 AR Path="/60ADA612/60B1709E" Ref="C12"  Part="1" 
-F 0 "C12" H 9092 1646 50  0000 L CNN
-F 1 "100nF" H 9092 1555 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric" H 9000 1600 50  0001 C CNN
-F 3 "~" H 9000 1600 50  0001 C CNN
-	1    9000 1600
+F 0 "C12" H 9642 1646 50  0000 L CNN
+F 1 "100nF" H 9642 1555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 9550 1600 50  0001 C CNN
+F 3 "~" H 9550 1600 50  0001 C CNN
+	1    9550 1600
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	9000 1700 9500 1700
+	9550 1700 10050 1700
 Wire Wire Line
-	9000 1750 9000 1700
-NoConn ~ 9500 1600
+	9550 1750 9550 1700
+NoConn ~ 10050 1600
 Wire Wire Line
-	9000 1500 9500 1500
+	9550 1500 10050 1500
 Wire Wire Line
-	9000 1450 9000 1500
+	9550 1450 9550 1500
 $Comp
 L power:+3V3 #PWR?
 U 1 1 60B170AB
-P 9000 1450
+P 9550 1450
 AR Path="/60B170AB" Ref="#PWR?"  Part="1" 
 AR Path="/60ADA612/60B170AB" Ref="#PWR039"  Part="1" 
-F 0 "#PWR039" H 9000 1300 50  0001 C CNN
-F 1 "+3V3" H 9015 1623 50  0000 C CNN
-F 2 "" H 9000 1450 50  0001 C CNN
-F 3 "" H 9000 1450 50  0001 C CNN
-	1    9000 1450
+F 0 "#PWR039" H 9550 1300 50  0001 C CNN
+F 1 "+3V3" H 9565 1623 50  0000 C CNN
+F 2 "" H 9550 1450 50  0001 C CNN
+F 3 "" H 9550 1450 50  0001 C CNN
+	1    9550 1450
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1263,20 +1261,20 @@ RXD
 Text Label 750  5600 0    50   ~ 0
 TXD
 Wire Wire Line
-	9150 1100 9500 1100
+	9700 1100 10050 1100
 Wire Wire Line
-	9150 1200 9500 1200
+	9700 1200 10050 1200
 Wire Wire Line
-	9150 1300 9500 1300
+	9700 1300 10050 1300
 Wire Wire Line
-	9150 1400 9500 1400
-Text Label 9150 1400 0    50   ~ 0
+	9700 1400 10050 1400
+Text Label 9700 1400 0    50   ~ 0
 RXD
-Text Label 9150 1300 0    50   ~ 0
+Text Label 9700 1300 0    50   ~ 0
 TXD
-Text Label 9150 1200 0    50   ~ 0
+Text Label 9700 1200 0    50   ~ 0
 SBWTDIO
-Text Label 9150 1100 0    50   ~ 0
+Text Label 9700 1100 0    50   ~ 0
 SBWTCK
 Text Label 5250 4150 2    50   ~ 0
 SBWTCK
@@ -1286,19 +1284,17 @@ Text Label 950  4150 0    50   ~ 0
 SBWTDIO
 Wire Wire Line
 	4900 4150 5250 4150
-Text Notes 9550 950  0    50   ~ 0
-TODO: check layout\n
 $Comp
 L msp430fr2353tdbt:Launchpad_Interface J?
 U 1 1 60B17109
-P 9700 1400
+P 10250 1400
 AR Path="/60B17109" Ref="J?"  Part="1" 
 AR Path="/60ADA612/60B17109" Ref="J5"  Part="1" 
-F 0 "J5" H 10288 1450 50  0000 L CNN
-F 1 "4-Wire_JTAG_Programming" H 10288 1359 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Horizontal" H 9700 1400 50  0001 C CNN
-F 3 "~" H 9700 1400 50  0001 C CNN
-	1    9700 1400
+F 0 "J5" H 10838 1450 50  0000 L CNN
+F 1 "Launchpad_Programming" H 10100 950 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Horizontal" H 10250 1400 50  0001 C CNN
+F 3 "~" H 10250 1400 50  0001 C CNN
+	1    10250 1400
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1352,7 +1348,7 @@ AR Path="/60ADA612/60B17123" Ref="U2"  Part="1"
 F 0 "U2" H 3100 7800 60  0000 C CNN
 F 1 "MSP430FR2353TDBT" H 3100 7700 60  0000 C CNN
 F 2 "footprints:MSP430FR2353TDBT" H 2350 7300 60  0001 C CNN
-F 3 "" H -1000 6450 60  0000 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/msp430fr2353.pdf" H -1000 6450 60  0000 C CNN
 	1    3100 5650
 	1    0    0    -1  
 $EndComp
@@ -1551,8 +1547,8 @@ F 3 "~" H 550 1100 50  0001 C CNN
 	1    550  1100
 	-1   0    0    1   
 $EndComp
-Connection ~ 9000 1700
-Connection ~ 9000 1500
+Connection ~ 9550 1700
+Connection ~ 9550 1500
 $Comp
 L Device:R R4
 U 1 1 60C2C4B9
@@ -1602,10 +1598,10 @@ GND
 Text HLabel 3500 2400 2    50   Output ~ 0
 12V
 $Comp
-L power:+12P #PWR?
+L power:+12P #PWR0104
 U 1 1 60D5A826
 P 3400 2300
-F 0 "#PWR?" H 3400 2150 50  0001 C CNN
+F 0 "#PWR0104" H 3400 2150 50  0001 C CNN
 F 1 "+12P" H 3415 2473 50  0000 C CNN
 F 2 "" H 3400 2300 50  0001 C CNN
 F 3 "" H 3400 2300 50  0001 C CNN
@@ -1617,10 +1613,10 @@ Wire Wire Line
 Wire Wire Line
 	3400 2400 3500 2400
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0105
 U 1 1 60D62369
 P 3400 2650
-F 0 "#PWR?" H 3400 2400 50  0001 C CNN
+F 0 "#PWR0105" H 3400 2400 50  0001 C CNN
 F 1 "GND" H 3405 2477 50  0000 C CNN
 F 2 "" H 3400 2650 50  0001 C CNN
 F 3 "" H 3400 2650 50  0001 C CNN
@@ -1631,4 +1627,8 @@ Wire Wire Line
 	3400 2650 3400 2550
 Wire Wire Line
 	3400 2550 3500 2550
+Wire Wire Line
+	4900 5050 5250 5050
+Text Notes 9800 2900 0    50   ~ 0
+TODO: \nMOSFET THT maken\nCAN doorgeven naar buiten
 $EndSCHEMATC
