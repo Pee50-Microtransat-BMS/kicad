@@ -44,8 +44,6 @@ $EndComp
 Wire Wire Line
 	950  3000 950  2900
 Wire Wire Line
-	950  2900 1100 2900
-Wire Wire Line
 	1900 3000 1900 2900
 Text Notes 1000 3100 0    50   ~ 0
 -> Current flow ->
@@ -68,20 +66,18 @@ F 3 "~" H 950 2900 50  0001 C CNN
 $EndComp
 Connection ~ 950  2900
 $Comp
-L 2021-05-13_09-37-19:IRLML6346TRPBF Q?
+L Device:Q_NMOS_GDSD Q?
 U 1 1 60B16EB6
-P 1400 2600
+P 1400 2800
 AR Path="/60B16EB6" Ref="Q?"  Part="1" 
 AR Path="/60ADA612/60B16EB6" Ref="Q1"  Part="1" 
-F 0 "Q1" V 1950 2600 50  0000 C CNN
-F 1 "IRLML6346TRPBF" V 2050 2600 50  0000 C CNN
-F 2 "footprints:IRLML6346TRPBF" H 1850 2340 60  0001 C CNN
-F 3 "" H 1400 2600 60  0000 C CNN
-	1    1400 2600
+F 0 "Q1" V 1950 2800 50  0000 C CNN
+F 1 "RFD14N05L" V 2050 2800 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-251-3-1EP_Horizontal_TabDown" H 1850 2540 60  0001 C CNN
+F 3 "https://nl.farnell.com/on-semiconductor/rfd14n05l/mosfet-n-logic-i-pak/dp/1017789" H 1400 2800 60  0001 C CNN
+	1    1400 2800
 	0    -1   1    0   
 $EndComp
-Wire Wire Line
-	1700 2900 1900 2900
 $Comp
 L 2021-04-28_08-31-09:MAX44284EAUT+ U?
 U 1 1 60B16EBD
@@ -1348,7 +1344,7 @@ AR Path="/60ADA612/60B17123" Ref="U2"  Part="1"
 F 0 "U2" H 3100 7800 60  0000 C CNN
 F 1 "MSP430FR2353TDBT" H 3100 7700 60  0000 C CNN
 F 2 "footprints:MSP430FR2353TDBT" H 2350 7300 60  0001 C CNN
-F 3 "https://www.ti.com/lit/ds/symlink/msp430fr2353.pdf" H -1000 6450 60  0000 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/msp430fr2353.pdf" H -1000 6450 60  0001 C CNN
 	1    3100 5650
 	1    0    0    -1  
 $EndComp
@@ -1629,6 +1625,15 @@ Wire Wire Line
 	3400 2550 3500 2550
 Wire Wire Line
 	4900 5050 5250 5050
-Text Notes 9800 2900 0    50   ~ 0
-TODO: \nMOSFET THT maken\nCAN doorgeven naar buiten
+Wire Wire Line
+	950  2900 1100 2900
+Wire Wire Line
+	1200 3000 1100 3000
+Wire Wire Line
+	1100 3000 1100 2900
+Connection ~ 1100 2900
+Wire Wire Line
+	1100 2900 1200 2900
+Wire Wire Line
+	1600 2900 1900 2900
 $EndSCHEMATC
