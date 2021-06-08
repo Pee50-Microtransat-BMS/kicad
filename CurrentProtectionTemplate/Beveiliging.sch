@@ -1636,4 +1636,6 @@ Wire Wire Line
 	1100 2900 1200 2900
 Wire Wire Line
 	1600 2900 1900 2900
+Text Notes 5950 2300 0    50   ~ 0
+High-current optie: \nR2 = 0R002\nI = 6A\nAv = 100
 $EndSCHEMATC
